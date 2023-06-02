@@ -1,0 +1,18 @@
+.posts{
+   display: flex;
+}
+.post{
+    border:1px solid gray;
+    max-width: 600px;
+    padding: 8px;
+    margin: 8px 0px;
+}
+.show-comments{
+    padding: 8px;
+    margin:8px 8px;
+    background-color: bisque;
+    cursor: pointer;
+    width:128px;
+    display: flex;
+    justify-content: center;
+}

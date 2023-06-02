@@ -1,0 +1,14 @@
+
+<div class="posts" *ngIf="post">
+    <div class="post" >
+        <h4>{{ post.title }}</h4>
+        <blockquote>{{ post.body }}</blockquote>
+                <app-comments *ngFor="let comment of comments$ | async as comments" [comment]="comment" 
+                    (passPostId)="getPostId(post)">
+                </app-comments>
+    </div>
+    <div class="loadcomments" *ngIf="post">
+        <div class="show-comments" (click)="getPostId(post)">{{!showComments? 'Show Comments' : 'Hide Comments'}}</div>
+    </div>
+</div>
+

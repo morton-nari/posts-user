@@ -1,0 +1,13 @@
+<div class="users" *ngIf=" users$ |async as users; else loading ">
+    <app-users *ngFor="let user of users" [user]="user" (postsLoad)="posts(user)" >
+    </app-users>
+    <div class="show-all-post" [ngClass]="!showAll ? 'dis-none' : 'dis-block'" (click)="loadAllPosts()">Show All Posts</div>
+</div>
+<div class="posts">
+    <app-posts  *ngFor="let post of posts$ | async as posts" [post]="post" ></app-posts>
+    <div class="loading" *ngIf="loadPost">Loading...</div>
+</div>
+
+<ng-template #loading>Loading users...</ng-template>
+
+

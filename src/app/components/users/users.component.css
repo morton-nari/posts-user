@@ -1,0 +1,12 @@
+.users {
+    display: inline-block;
+    width: 120px;
+    background-color: beige;
+    border: 1px solid gray;
+    cursor: pointer;
+    margin: 8px 0px;
+    text-align: center;
+    padding: 6px;
+    box-shadow: 2px 2px 5px lightblue;
+    list-style-type: none;
+}

@@ -1,0 +1,22 @@
+.dis-none {
+    display:none;
+}
+.dis-block {
+    display:block;
+}
+.loading{
+    display: block;
+    position: fixed;
+    top: 200px;
+    left: 500px
+}
+.show-all-post{
+    width: 128px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    cursor: pointer;
+    margin: 32px 0px;
+    text-align: center;
+  
+}
